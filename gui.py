@@ -115,7 +115,7 @@ class GUI:
         self.__screen.tracer(0, 0)# turn of screen update per step , to prevent seeing each cell being updated
         self.startxindex , self.startyindex , self.endxindex ,self.endyindex = self.__mapDrawer.draw_maze(self.__map , self.__squareDIM, self.startposx, self.startposy )
         self.__mapDrawer.goto(textpos)# move the pen to the position where the text is placed 
-        self.__mapDrawer.write('PIZZA RUNNERS: Done by Yee Hang & Lim Hur DAAA2B02', align = 'center')# write the project 
+        self.__mapDrawer.write('MAZE RUNNERS', align = 'center')# write the project 
         self.__screen.update()# update the screen
 
         self.__screen.tracer(1, 20) # turn the turtle screen auto update back on 
